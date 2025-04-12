@@ -34,7 +34,7 @@ The following are the data attributes that we have to create inside a table: <br
     <img src="Images/Submission-TBL.png" alt="Alt Text" Width="600">
 
 
-## Table Structures
+## Table Structures 
 
 1 - Student Table Structure
   - `(studenttbl.username)` --> `(submissiontbl.username)`
