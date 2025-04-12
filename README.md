@@ -9,7 +9,7 @@ The following are the data attributes that we have to create inside a table: <br
 
 ## Queries
 
-   ### 1 - **Query for Student Table**
+ 1 - **Query for Student Table**
    
    - Relation: One-to-Many
    -  `(studenttbl.username)` --> `(submissiontbl.username)` <br>
@@ -17,7 +17,7 @@ The following are the data attributes that we have to create inside a table: <br
     <img src="Images/Student-TBL.png" alt="Alt Text" Width="400">
 
 
-   ### 2 - **Query for Assignment Table**
+ 2 - **Query for Assignment Table**
    
    - Relation: One-to-Many
    - `(assignmenttbl.shortname)` --> `(submissiontbl.shortname)` <br>
@@ -25,7 +25,7 @@ The following are the data attributes that we have to create inside a table: <br
     <img src="Images/Assignment-TBL.png" alt="Alt Text" Width="400">
 
 
-   ### 3 - **Query for Submission Table** 
+3 - **Query for Submission Table** 
    
    - Relation: Many-to-One
    - `(submissiontbl.username)` --> `(studenttbl.username)`
@@ -36,19 +36,19 @@ The following are the data attributes that we have to create inside a table: <br
 
 ## Table Structures
 
-  ### 1 - Student Table Structure
+1 - Student Table Structure
   - `(studenttbl.username)` --> `(submissiontbl.username)`
   - Meaning: **One Student** can have **Many Submissions**, Each Submission requires a valid Student. <br>
   <img src="Images/Student-Structure.png" alt="Alt Text" Width="400">
 
 
-  ### 2 - Assignment Table Structure 
+2 - Assignment Table Structure 
   - `(assignmenttbl.shortname)` --> `(submissiontbl.shortname)`
   - Meaning: **One assignment** can have **Many Submissions** connected with it. <br>
   <img src="Images/Assignment-Structure.png" alt="Alt Text" Width="400">
 
 
-  ### 3 - Submission Table Structure <br>
+3 - Submission Table Structure <br>
   - `(submissiontbl.username)` --> `(studenttbl.username)`
   - Meaning: **Many Submissions** belong to **One Student**.
   - `(submissiontbl.shortname)` --> `(assignmenttbl.shortname)`
